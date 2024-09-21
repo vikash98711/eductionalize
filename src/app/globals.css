@@ -101,6 +101,12 @@ h2{
     --LightBlue : #4550b8;
     --PurpleStrip :#552756;
 }
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 a{
     text-decoration: none;
 }
@@ -2512,9 +2518,9 @@ section.courses-review-wrapper{
 
 .wrapper-company-logos-sslider {
   width: 100%;
-  height: 100%;
+  height: 355px;
   overflow: hidden;
-  position: relative;
+ 
 }
 
 
@@ -6117,3 +6123,4 @@ img.CommonSiteLogo {
   margin-left: 0px !important;
 }
 }
+

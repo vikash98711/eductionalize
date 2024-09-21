@@ -1,7 +1,6 @@
-"use client"
+"use client";
 
 import React from 'react';
-
 import Slider from 'react-slick';
 
 const CompanyLogoSlider = () => {
@@ -10,11 +9,12 @@ const CompanyLogoSlider = () => {
     autoPlay: true,
     infinite: true,
     speed: 800,
-    slidesToShow: 5,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    centerMode: true,
-    focusOnSelect: true, 
-    responsive: [ 
+    centerMode: false,
+    focusOnSelect: false,
+    arrows: false, // Disable arrows
+    responsive: [
       {
         breakpoint: 992, // Medium screen
         settings: {
@@ -35,57 +35,31 @@ const CompanyLogoSlider = () => {
   };
   
   return (
-   <>
     <section className='wrapper-company-logos-sslider pt-pb'>
- <div className='container'>
-         
+      <div className='container'>
+        <div className='co-sm-12 text-center'>
+          <p className='mb-0'>We prepare you for</p>
+          <h2 className="text-dark">International Exam</h2>
+          <hr />
+        </div>
         
-       <div className='co-sm-12 text-center'>
-       <p className='mb-0'>We prepare you for</p>
-         <h2 className="text-dark"> 
-          International Exam
-           
-         </h2>
-         <hr></hr>
-       </div>
-       
-         <Slider {...settings}>
-                 
-                 {/* <div className='testimonial-slider-wrap px-2'>
-                    <img src="https://www.oracleglobaleducation.com/images/partner6.jpg"/>
-                 </div>  */}
-                 <div className='Common-wrapper-company-logos'>
-                     
-                       <img src="https://www.oracleglobaleducation.com/images/partner5.jpg"/>
-                    
-                 </div> 
-                 <div className='Common-wrapper-company-logos'>
-                     
-                       <img src="https://www.oracleglobaleducation.com/images/partner6.jpg"/>
-                     
-                 </div> 
-                 <div className='Common-wrapper-company-logos'>
-                    
-                       <img src="https://www.oracleglobaleducation.com/images/partner7.jpg"/>
-                     
-                 </div> 
-                 <div className='Common-wrapper-company-logos'>
-                    
-                       <img src="https://www.oracleglobaleducation.com/images/partner8.jpg"/>
-                     
-                 </div> 
-               
-                
-                    
-             </Slider>
-        
-         
-    
-
+        <Slider {...settings}>
+          <div className='Common-wrapper-company-logos'>
+            <img src="https://www.oracleglobaleducation.com/images/partner5.jpg" alt="Partner 5" />
+          </div> 
+          <div className='Common-wrapper-company-logos'>
+            <img src="https://www.oracleglobaleducation.com/images/partner6.jpg" alt="Partner 6" />
+          </div> 
+          <div className='Common-wrapper-company-logos'>
+            <img src="https://www.oracleglobaleducation.com/images/partner7.jpg" alt="Partner 7" />
+          </div> 
+          <div className='Common-wrapper-company-logos'>
+            <img src="https://www.oracleglobaleducation.com/images/partner8.jpg" alt="Partner 8" />
+          </div> 
+        </Slider>
       </div>
- </section>
-   </>
-  )
+    </section>
+  );
 }
 
 export default CompanyLogoSlider;

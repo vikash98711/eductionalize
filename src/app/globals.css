@@ -959,7 +959,7 @@ footer {
 /* whatsapp icon css starting here  */
 .wrapper-whats-appicon {
     position: absolute;
-    bottom: 7%;
+    bottom: 4%;
     right: 4%;
     z-index: 55;
     position: fixed;
@@ -973,7 +973,7 @@ footer {
 }
 .wrapper-zoom-meeting{
     position: absolute;
-    bottom: 7%;
+    bottom: 4%;
     left: 2%;
     z-index: 55;
     position: fixed;

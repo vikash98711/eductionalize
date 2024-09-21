@@ -41,10 +41,10 @@ const FormModal = ({ show, handleClose }) => {
           </div>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          {/* <Button variant="secondary" onClick={handleClose}>
             Close
-          </Button>
-          <button  className='btn border-0 bg-secondary text-white' > 
+          </Button> */}
+          <button  className='btn border-0  text-white' style={{backgroundColor:'#ef0000',padding:'10px 25px'}} > 
             Submit
           </button>
         </Modal.Footer>

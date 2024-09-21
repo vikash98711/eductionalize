@@ -147,11 +147,7 @@ const page = () => {
 
 
                   </ul>
-                  {/* <a href="contact.html" className="eduact-btn eduact-btn-second">
-              <span className="eduact-btn__curve" />
-              Buy This Course
-              <i className="icon-arrow" />
-            </a> */}
+          
                 </div>
                 <div className="course-details__sidebar__item">
                   <h3 className="course-details__sidebar__title">Latest Course</h3>
@@ -205,9 +201,7 @@ const page = () => {
                         <img src="assets/img/lc-2.jpg" alt="eduact" />
                       </div>
                       <div className="course-details__sidebar__post__content">
-                        {/* <span className="course-details__sidebar__post__meta">
-                          By <a href="course.html">Robert Fox</a>
-                        </span> */}
+                    
                         <h3 className="course-details__sidebar__post__title">
                           <Link href="/best-ielts-coaching-institute-in-delhi">IELTS COACHING...</Link>
                         </h3>
@@ -228,9 +222,7 @@ const page = () => {
                         <img src="/assets/img/lc-3.jpg" alt="eduact" />
                       </div>
                       <div className="course-details__sidebar__post__content">
-                        {/* <span className="course-details__sidebar__post__meta">
-                          By <a href="course.html">Robert Fox</a>
-                        </span> */}
+                     
                         <h3 className="course-details__sidebar__post__title">
                           <Link href="/occupational-english-test">OET COURSES...</Link>
                         </h3>

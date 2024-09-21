@@ -36,8 +36,14 @@
     --eduact-white-rgb: 255, 255, 255;
     --purple: #ef0000;
 }
+
+body{
+    font-family: var( --eduact-font) !important;
+}
 a{
     text-decoration: none !important;
+      font-family:var(--eduact-font);
+   
 }
 h2{
     font-size: 40px;
@@ -623,7 +629,7 @@ h2{
 }
 @media (max-width: 991px) {
     .course-drop-wrap{
-        display: block !important;
+        /* display: block !important; */
         position: static; 
         width: 100%;
         padding-top: 10px; 

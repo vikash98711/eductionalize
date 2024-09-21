@@ -178,7 +178,7 @@ const Footer = () => {
           </div>
           <hr></hr>
           <div className="container text-center">
-         <p class="btn-hover color-2 d-inline-block"> © 2018 . All Rights Reserved. | Oracle Education</p>
+         <p className="btn-hover color-2 d-inline-block"> © 2018 . All Rights Reserved. | Oracle Education</p>
         </div>
         </footer>
       </section>

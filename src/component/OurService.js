@@ -75,7 +75,7 @@ const OurService = () => {
             </div>
             {/* /.service-icon */}
             <h3 className="service-two__title">
-              <a href="team.html">Regularly enhance teaching competencies</a>
+              <p href="team.html">Regularly enhance teaching competencies</p>
             </h3>
             {/* /.service-title */}
             <p className="service-two__text">

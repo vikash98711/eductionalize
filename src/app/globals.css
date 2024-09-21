@@ -1,13 +1,21 @@
 @import '@fortawesome/fontawesome-free/css/all.css';
 
 /* arabic */
-@font-face {
+/* @font-face {
   font-family: 'Rubik' !important;
+  font-family:'Urbanist';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nErXyi0A.woff2) format('woff2');
   unicode-range: U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0898-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EFD-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24, U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47, U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59, U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A, U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89, U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+} */
+:root {
+
+  --eduact-font: 'Urbanist', sans-serif;
+}
+a {
+  font-family:var(--eduact-font);
 }
 *{
     margin: 0;
@@ -421,7 +429,7 @@ transition: 0.5s ease;
 
 
 /* header css starting here  */
-@media (min-width:992px) and (max-width:2200px) {
+@media (min-width:1199px) and (max-width:2200px) {
     .container-postition-Header{
         position: relative;
     }
@@ -432,6 +440,16 @@ transition: 0.5s ease;
     img.CommonSiteLogo {
         margin-left: 8rem;
     }
+    button.jsx-e996db5371322c3a.btn-hover.color-2.Enroll-button-header {
+    
+      margin: 0px 12px;
+     
+  }
+  .nav-link a {
+
+    font-size: 14px;
+ 
+}
 }
 /* header css starting here  */
 
@@ -602,7 +620,7 @@ font-family: rubik !important;
 }
 .RightWapperAboutUS h2{
   color: #000;
-  font-family: rubik !important;
+  font-family: var(--eduact-font) !important;
       font-weight: 500;
       letter-spacing: 2px;
       font-size: 20px;
@@ -771,7 +789,7 @@ footer {
 }
 .Footer-section ul li{
    margin: 5px 0px;
-   font-size: 14px;
+   font-size: 16px;
    color: #8689a7;
    font-weight: 400;
 
@@ -1295,6 +1313,11 @@ section.courses-review-wrapper{
     border-bottom: 1px solid var(--eduact-soft4);
   }
   
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important;
+}
   @media (max-width: 991px) {
     .fact-one {
       padding-bottom: 85px;
@@ -1597,7 +1620,7 @@ section.courses-review-wrapper{
   }
   @media (min-width:768px) and (max-width:991px) {
     .banner-TextWrapper .Banner-heading {
-        font-size: 44px;
+        font-size: 10px;
     }
     
   }
@@ -5935,8 +5958,8 @@ font-size: 16px;
 }
 .nav-link a{
   color: #004f76;
-  font-family: rubik !important;
-  font-weight: 500;
+  /* font-family: rubik !important; */
+  font-weight: 600;
   letter-spacing: 2px;
   font-size: 15px;
   text-transform: uppercase;
@@ -5972,7 +5995,7 @@ font-size: 16px;
 .courses-card-box .courses-courseName a{
   font-size: 20px;
     text-transform: capitalize;
-    font-family: rubik !important;
+    font-family: var(--eduact-font);
     font-weight: normal;
     color: #004f76;
     border-bottom: 1px dashed #004f76;
@@ -5995,7 +6018,7 @@ font-size: 16px;
   color: #004f76;
 }
 .courses-card-box p{
-  font-family: rubik !important;
+  font-family: var(--eduact-font);
     font-weight: normal;
 }
 
@@ -6062,4 +6085,16 @@ font-size: 16px;
   font-weight: 500;
   font-size: 16px !important;
   font-style: italic;
+}
+
+
+@media (min-width:992px) and (max-width:1200px) {
+  .Enroll-button-header {
+    font-size: 11px;
+    margin: 0px 5px;
+    background-color: #ef0000;
+}
+img.CommonSiteLogo {
+  margin-left: 0px !important;
+}
 }

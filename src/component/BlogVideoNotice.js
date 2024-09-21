@@ -5,7 +5,7 @@ import React from 'react'
 
 async function fetchBlog() {
   try {
-    const response = await fetch('https://studentapp.sasfoundation.co/admin/public/api/blog')
+    const response = await fetch('https://studentapp.theoraclecrm.com/admin/public/api/blog')
     const responseJson = await response.json()
     return responseJson.blog_list.data
   } catch (error) {
@@ -15,7 +15,7 @@ async function fetchBlog() {
 }
 async function fetchVideo() {
   try {
-    const response = await fetch('https://studentapp.sasfoundation.co/admin/public/api/video')
+    const response = await fetch('https://studentapp.theoraclecrm.com/admin/public/api/video')
     console.log(response,"blogvideosection");
     
     const responseJson = await response.json()

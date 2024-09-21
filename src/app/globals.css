@@ -1574,6 +1574,7 @@ section.courses-review-wrapper{
   @media (min-width:0px) and (max-width:576px) {
     .banner-TextWrapper .Banner-heading {
         font-size: 20px;
+        display: none;
     }
     /* .banner-TextWrapper {
         top: 50%;
@@ -1586,8 +1587,8 @@ section.courses-review-wrapper{
         font-weight: 600;
         color: #fff;
         cursor: pointer;
-        margin: 20px 0px 0px 0px;
-        height: 34px;
+        margin: -2px 0px 0px 0px;
+        height: 43px;
         text-align: center;
         border: none;
         background-size: 300% 100%;
@@ -1598,18 +1599,36 @@ section.courses-review-wrapper{
       .Learining-wrapper {
         height: fit-content;
       }
+      .banner-TextWrapper {
+        width: 100%;
+        position: absolute;
+        top: 61%;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
     
   }
 
   
   @media (min-width:577px) and (max-width:767px) {
     .banner-TextWrapper .Banner-heading {
-        font-size: 34px;
+        font-size: 0px;
     }
  
       .Learining-wrapper {
         height: fit-content;
       }
+      .banner-TextWrapper {
+        width: 100%;
+        position: absolute;
+        top: 61%;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
     
   }
   @media (min-width:768px) and (max-width:900px) {
@@ -1626,7 +1645,7 @@ section.courses-review-wrapper{
   }
   @media (min-width:992px) and (max-width:1200px) {
     .banner-TextWrapper .Banner-heading {
-        font-size: 64px;
+        font-size: 20px;
     }
    
     

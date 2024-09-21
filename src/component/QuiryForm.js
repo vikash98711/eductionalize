@@ -13,14 +13,15 @@ return (
             <h2 className='text-white'> Enquiry Form </h2>
             <hr></hr>
             <div className='row'>
+            <div className="mb-3 col-sm-6"> <label htmlFor="exampleInputPassword1" className="form-label"> Name </label> 
+               <input type="text" className="form-control" id="exampleInputPassword1" /> 
+               </div>
                <div className="mb-3 col-sm-6"> <label htmlFor="exampleInputEmail1" className="form-label"> Email </label>
                 <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" /> 
                 </div>
-               <div className="mb-3 col-sm-6"> <label htmlFor="exampleInputPassword1" className="form-label"> Password </label> 
-               <input type="password" className="form-control" id="exampleInputPassword1" /> 
-               </div>
+
                <div className="mb-3 col-sm-12"> <label htmlFor="Contact Number" className="form-label"> Contact Number </label> 
-               <input type="password" className="form-control" id="Contact Number" /> 
+               <input type="text" className="form-control" id="Contact Number" /> 
                </div>
                <div className="mb-3 col-sm-12">
                   <label htmlFor="  Contact Number" className="form-label"> Courses </label> 

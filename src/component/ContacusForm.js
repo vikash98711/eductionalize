@@ -44,7 +44,7 @@ const ContacusForm = () => {
       Phone <span>*</span>
     </label>
     <input
-      type="password"
+      type="text"
       className="form-control"
       id="Contact Number"
     />

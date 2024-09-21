@@ -14,14 +14,15 @@ const FormModal = ({ show, handleClose }) => {
           <div>
             <div className="form-group">
               <form>
+              <div>
+                  <label htmlFor="" className='fs-14 ms-2' >Name</label>
+                  <input type="text" className="form-control rounded-2 mb-2" name='name' placeholder=''/>
+                </div>
                 <div>
                   <label htmlFor="" className='fs-14 ms-2' >Email</label>
                   <input type="text" className="form-control rounded-2 mb-2" name='email' placeholder=''/>
                 </div>
-                <div>
-                  <label htmlFor="" className='fs-14 ms-2' >Password</label>
-                  <input type="text" className="form-control rounded-2 mb-2" name='password' placeholder=''/>
-                </div>
+             
                 <div>
                   <label htmlFor="" className='fs-14 ms-2' >Contact Number</label>
                   <input type="text" className="form-control rounded-2 mb-2" name='phone' placeholder=''/>
@@ -31,7 +32,20 @@ const FormModal = ({ show, handleClose }) => {
                   {/* <input type="text" className="form-control rounded-2 mb-2" name='phone' placeholder=''/> */}
                   <select name="courses" className='form-control rounded-2 mb-2'>
                     <option value="">Select courses</option>
-                    <option value="">course one</option>
+                    <option value={1}>French</option>
+                     <option value={2}>German</option>
+                     <option value={3}>Spanish</option>
+                     <option value={4}>engilsh speaking</option>
+                     <option value={5}>IELTS coaching</option>
+                     <option value={6}>arabic</option>
+                     <option value={7}>chinese</option>
+                     <option value={8}>japanese</option>
+                     <option value={9}>russian</option>
+                     <option value={10}>hindi</option>
+                     <option value={11}>OET course</option>
+                     <option value={12}>korean</option>
+                     <option value={13}>study in abroad</option>
+
                   </select>
                 </div>
                  

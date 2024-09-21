@@ -6132,4 +6132,13 @@ img.CommonSiteLogo {
     top: 0;
     z-index: 1020;
 }
+.Header-small-scrren {
+  z-index: 555555;
+  background-color: white;
+  border-bottom-left-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  padding: 18px;
+  background: #fff;
+    box-shadow: 0px 6px 7px #b2aeae;
+}
 }

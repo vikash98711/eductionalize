@@ -597,20 +597,20 @@ h2{
    background: #004f76 !important
 }
 
-.course-drop-wrap .dropdown-item a.Common-menu-items{
+.course-drop-wrap  a.Common-menu-items{
     color: #fff !important;
-    font-family: rubik !important;
+    font-family: var(--eduact-font);
     font-weight: 500;
     letter-spacing: 1px;
     font-size: 15px;
     line-height: 2;
     transition: 0.5s;
  }
- .course-drop-wrap .dropdown-item a.Common-menu-items i{
+ .course-drop-wrap  a.Common-menu-items i{
     color: #fff !important;
    
  }
- .course-drop-wrap .dropdown-item a.Common-menu-items:hover{
+ .course-drop-wrap  a.Common-menu-items:hover{
    margin-left:4px;
    
  }

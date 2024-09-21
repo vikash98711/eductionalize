@@ -7,14 +7,18 @@ import TopBannerDetails from '@/component/TopBannerDetails';
 import Link from 'next/link';
 import React from 'react';
 
+
+
+
 // Fetch all blogs
 async function fetchBlog() {
   try {
-    const response = await fetch('https://studentapp.sasfoundation.co/admin/public/api/blog');
+    const response = await fetch('https://studentapp.theoraclecrm.com/admin/public/api/blog');
     if (!response.ok) {
       throw new Error('Failed to fetch blog list');
     }
     const responseJson = await response.json();
+ 
     return responseJson.blog_list.data || [];
   } catch (error) {
     console.error('Error fetching blog list:', error);
@@ -22,14 +26,16 @@ async function fetchBlog() {
   }
 }
 
-// Fetch a single blog by slug
+
 async function fetchSingleBlog(slug) {
   try {
-    const response = await fetch(`https://studentapp.sasfoundation.co/admin/public/api/latest-blogs-of-oracle/${slug}`);
+    const response = await fetch(`https://studentapp.theoraclecrm.com/admin/public/api/latest-blogs-of-oracle/${slug}`);
     if (!response.ok) {
       throw new Error('Failed to fetch single blog');
     }
     const responseJson = await response.json();
+
+
     return responseJson.blog_details.data?.[0] || null;
   } catch (error) {
     console.error(`Error fetching blog with slug ${slug}:`, error);
@@ -37,13 +43,18 @@ async function fetchSingleBlog(slug) {
   }
 }
 
-// Generate static paths for dynamic routing
-export async function generateStaticParams() {
-  // Temporary hardcoded slugs (replace with API call later)
-  const slugs = ['blog-slug-1', 'blog-slug-2', 'blog-slug-3'];
+
+export async function generateStaticParams({params}) {
+  const response = await fetch('https://studentapp.theoraclecrm.com/admin/public/api/blog');
+  
+  const responseJson = await response.json();
+  
+  
+
+  const slugs = responseJson.blog_list.data || ['real-patients-real-stories2', 'learning-is-heaven', 'real-patients-real-stories2'];
 
   return slugs.map((slug) => ({
-    blogslug: slug, // Make sure the param name matches the dynamic route [blogslug]
+    blogslug: slug.slug, 
   }));
 }
 
@@ -51,7 +62,7 @@ const Page = async ({ params }) => {
   const blogData = await fetchBlog();
   const blogValue = await fetchSingleBlog(params.blogslug);
 
-  // Format date utility
+
   const formatDate = (timeString) => {
     if (!timeString) return '';
     return new Date(timeString).toLocaleDateString('en-GB', {
@@ -103,11 +114,10 @@ const Page = async ({ params }) => {
                 className="border-bottom pb-5 mb-5"
               />
 
-              {/* Comments */}
-              {/* Your comment section here */}
+         
             </div>
 
-            {/* Sidebar for latest posts */}
+           
             <div className="col-lg-4 col-12">
               <div className="rounded shadow bg-white p-3">
                 <h3 className="course-details__sidebar__title pb-3 mb-3">

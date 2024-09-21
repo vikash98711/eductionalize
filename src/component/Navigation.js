@@ -49,13 +49,13 @@ const Navigation = () => {
         </div>
       </div>
 
-      <Navbar expand='lg' className='navbar bg-light navbar-light sticky-top'>
+      {/* <Navbar expand='lg' className='navbar bg-light navbar-light sticky-top'>
         <div className='container-fluid container-postition-Header'>
           <Link href='/'>
             <img className='CommonSiteLogo' src='/assets/img/OracleLeft.png' alt='' width='181px' />
           </Link>
 
-          {/* Custom Navbar Toggle Button with FontAwesome Icons */}
+     
           <button
             aria-controls='basic-navbar-nav'
             aria-expanded={isNavExpanded}
@@ -101,7 +101,87 @@ const Navigation = () => {
             </div>
           </Navbar.Collapse>
         </div>
+      </Navbar> */}
+
+<Navbar expand='lg' className='navbar bg-light navbar-light sticky-top'>
+        <div className='container-fluid container-postition-Header'>
+          <Link href='/'>
+            <img className='CommonSiteLogo' src='/assets/img/OracleLeft.png' alt='' width='181px' />
+          </Link>
+
+     
+          <button
+            aria-controls='basic-navbar-nav'
+            aria-expanded={isNavExpanded}
+            aria-label='Toggle navigation'
+            className='navbar-toggler custom-toggler'
+            onClick={toggleNav}
+          >
+            <i className={`fa-solid ${isNavExpanded ? 'fa-xmark' : 'fa-bars'}`}></i>
+          </button>
+
+          <Navbar.Collapse id='basic-navbar-nav' className={`Header-small-scrren d-lg-flex justify-content-end ${isNavExpanded ? 'show' : ''}`}>
+            <Nav className='nav-link my-2 my-lg-0 d-flex gap-xl-5 gap-lg-4'>
+              <Link href='/'>Home</Link>
+              {/* <Link href='/best-international-laungage-courses' className='position-relative course-drop-btn'>
+                Course<i className='fa-solid fa-angle-down text-secondary'></i>
+                <div className='d-block course-drop-wrap'>
+                  <div className='rounded-4 dropdown-bg p-3'>
+                    <div className='row'>
+                      {CourseList.map((courseValue) => (
+                        <div className='col-lg-4 col-md-6 col-sm-6' key={courseValue.id}>
+                          <NavDropdown.Item>
+                            <Link className='Common-menu-items text-capitalize' href={`/${courseValue.slug}`}>
+                              <i className='fa-solid fa-angles-right text-secondary'></i>&nbsp;
+                              {courseValue.name}
+                            </Link>
+                          </NavDropdown.Item>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </Link> */}
+              <div className='position-relative course-drop-btn'>
+                {/* <Link href='/best-international-language-courses' aria-haspopup="true" aria-expanded="false">
+                  Course
+                  <i className='fa-solid fa-angle-down text-secondary'></i>
+                </Link> */}
+                <Link href='#' aria-haspopup="true" aria-expanded="false">
+                  Course
+                  <i className='fa-solid fa-angle-down text-secondary'></i>
+                </Link>
+                <div className='d-block course-drop-wrap'>
+                  <div className='rounded-4 dropdown-bg p-3'>
+                    <div className='row'>
+                      {CourseList.map((courseValue) => (
+                        <div className='col-lg-4 col-md-6 col-sm-6' key={courseValue.id}>
+                          <Link href={`/${courseValue.slug}`} className='Common-menu-items text-capitalize'>
+                            <i className='fa-solid fa-angles-right text-secondary'></i>&nbsp;
+                            {courseValue.name}
+                          </Link>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <Link href='/visit-our-gallery'>Gallery</Link>
+              <Link href='/blog'>Blogs</Link>
+              <Link href='/visit-our-kids-section'>Kids Section</Link>
+              <Link href='/contact-us-for-more-information'>Contact</Link>
+            </Nav>
+
+            <div className='d-flex align-items-center gap-3'>
+              <button className='btn-hover color-2 Enroll-button-header' onClick={handleEnrollClick}>
+                Enroll Now
+              </button>
+            </div>
+          </Navbar.Collapse>
+        </div>
       </Navbar>
+
+
 
       <style jsx global>{`
         .custom-toggler {

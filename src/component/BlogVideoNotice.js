@@ -14,9 +14,20 @@ async function fetchBlog() {
 
 async function fetchVideo() {
   try {
-    const response = await fetch('https://studentapp.theoraclecrm.com/admin/public/api/video');
+    const response = await fetch('https://studentapp.theoraclecrm.com/admin/public/api/video',{
+      method: 'GET', 
+      // headers: {
+      //     'Content-Type': 'application/json',
+      // }, 
+      next: { revalidate: 10 },
+    });
+    
+    
     const responseJson = await response.json();
-    const videoId = extractVideoId(responseJson.videos.data[3]?.video_link);
+    
+    const videoId = extractVideoId(responseJson.videos.data[0]?.video_link);
+   
+
     return videoId;
   } catch (error) {
     console.log(error);

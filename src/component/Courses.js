@@ -6,7 +6,7 @@ import React from 'react'
 const Courses = () => {
 
     const CourseList = CourseData
-    console.log(CourseList,"CourseListCourseList");
+    
     
 
   return (

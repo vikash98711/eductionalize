@@ -6124,3 +6124,12 @@ img.CommonSiteLogo {
 }
 }
 
+@media (min-width:200px) and (max-width:968px){
+  .sticky-top {
+    height: 106px;
+   
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+}
